@@ -12,6 +12,7 @@ class Review(models.Model):
     personal_statement = models.OneToOneField(
         on_delete=models.CASCADE, to=Document, verbose_name=_('Document')
     )
+    comments = models.TextField(verbose_name=_('Text'))
     reviewer = models.ForeignKey(
         editable=False, on_delete=models.CASCADE, related_name='reviews',
         to=settings.AUTH_USER_MODEL, verbose_name=_('User'),
