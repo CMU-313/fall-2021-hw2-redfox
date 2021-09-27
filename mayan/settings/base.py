@@ -104,6 +104,7 @@ INSTALLED_APPS = (
     'mayan.apps.templating',
     'mayan.apps.testing',
     'mayan.apps.user_management',
+    'mayan.apps.review',
     'mayan.apps.views',
     # Project apps
     'mayan.apps.announcements',
