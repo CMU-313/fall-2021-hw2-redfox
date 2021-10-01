@@ -13,6 +13,7 @@ from mayan.apps.views.generics import (
 from mayan.apps.views.mixins import ExternalObjectViewMixin
 
 from .forms import RevForm
+from .models import Review
 
 def index(request):
     return HttpResponse("review")
@@ -21,6 +22,7 @@ def index(request):
 class ReviewEditView(SingleObjectEditView):
     extra_context = {'object': None, 'title': _('Review form editor')}
     form_class = RevForm
+    model = Review
     post_action_redirect = reverse_lazy(
         viewname='user_management:current_user_details'
     )
