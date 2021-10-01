@@ -1,6 +1,7 @@
 from mayan.apps.appearance.classes import Icon
 
 icon_about = Icon(driver_name='fontawesome', symbol='info')
+icon_file = Icon(driver_name='fontawesome', symbol='file')
 icon_book = Icon(driver_name='fontawesome', symbol='book')
 icon_documentation = Icon(driver_name='fontawesome', symbol='book')
 icon_forum = Icon(

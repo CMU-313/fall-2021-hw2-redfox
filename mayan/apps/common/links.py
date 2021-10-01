@@ -6,7 +6,7 @@ from mayan.apps.navigation.utils import get_content_type_kwargs_factory
 from .icons import (
     icon_about, icon_book, icon_documentation, icon_forum, icon_license,
     icon_object_copy, icon_setup, icon_source_code, icon_store, icon_support,
-    icon_tools
+    icon_tools, icon_file
 )
 
 
@@ -25,7 +25,10 @@ def object_copy_conditional_disable(context):
         except KeyError:
             return False
 
-
+link_review = Link(
+    icon=icon_file, tags='new_window', text=_('Review Form'),
+    url='https://mayan-edms.com/book/'
+)
 link_about = Link(
     icon=icon_about, text=_('About this'), view='common:about_view'
 )
@@ -33,6 +36,7 @@ link_book = Link(
     icon=icon_book, tags='new_window', text=_('Get the book'),
     url='https://mayan-edms.com/book/'
 )
+
 link_documentation = Link(
     icon=icon_documentation, tags='new_window',
     text=_('Documentation'), url='https://docs.mayan-edms.com'

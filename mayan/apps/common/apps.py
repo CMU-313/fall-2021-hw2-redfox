@@ -15,7 +15,7 @@ from mayan.apps.templating.classes import AJAXTemplate
 
 from .handlers import handler_pre_initial_setup, handler_pre_upgrade
 from .links import (
-    link_about, link_book, link_license, link_setup, link_store,
+    link_review, link_about, link_book, link_license, link_setup, link_store,
     link_support, link_tools
 )
 
@@ -144,12 +144,12 @@ class CommonApp(MayanAppConfig):
 
         menu_about.bind_links(
             links=(
-                link_tools, link_setup, link_about, link_book, link_store,
+                link_review, link_tools, link_setup, link_about, link_book, link_store,
                 link_support, link_license,
             )
         )
 
-        menu_topbar.bind_links(links=(menu_about, menu_user,), position=99)
+        menu_topbar.bind_links(links=(menu_about, link_review, menu_user, ), position=99)
 
         signal_pre_initial_setup.connect(
             dispatch_uid='common_handler_pre_initial_setup',
