@@ -27,7 +27,7 @@ def object_copy_conditional_disable(context):
 
 link_review = Link(
     icon=icon_file, tags='new_window', text=_('Review Form'),
-    url='http://localhost/#/review/review/'
+    view='review:review'
 )
 link_about = Link(
     icon=icon_about, text=_('About this'), view='common:about_view'
