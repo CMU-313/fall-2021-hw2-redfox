@@ -19,7 +19,7 @@ def index(request):
     return HttpResponse("review")
 
 
-class ReviewEditView(SingleObjectEditView):
+class ReviewEditView(SingleObjectCreateView):
     extra_context = {'object': None, 'title': _('Review form editor')}
     form_class = RevForm
     model = Review
