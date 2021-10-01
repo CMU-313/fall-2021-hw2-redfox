@@ -24,5 +24,5 @@ class ReviewEditView(SingleObjectCreateView):
     form_class = RevForm
     model = Review
     post_action_redirect = reverse_lazy(
-        viewname='user_management:current_user_details'
+        viewname='common:home'
     )
