@@ -97,20 +97,6 @@ ARG PIP_TRUSTED_HOST
 
 WORKDIR /src
 
-# Copy the source files needed to build the Python package.
-COPY --chown=mayan:mayan requirements /src/requirements
-COPY --chown=mayan:mayan \
-    HISTORY.rst \
-    LICENSE \
-    MANIFEST.in \
-    README.md \
-    README.rst \
-    setup.py \
-    /src/
-
-COPY --chown=mayan:mayan mayan /src/mayan
-
-# Install development packages needed to build the Python packages.
 RUN DEBIAN_FRONTEND=noninteractive \
 apt-get install -y --no-install-recommends \
     default-libmysqlclient-dev \
@@ -126,8 +112,24 @@ apt-get install -y --no-install-recommends \
     python3-dev \
     python3-venv \
     zlib1g-dev \
-    procps \
-&& mkdir -p "${PROJECT_INSTALL_DIR}" \
+    procps 
+
+# Copy the source files needed to build the Python package.
+COPY --chown=mayan:mayan requirements /src/requirements
+COPY --chown=mayan:mayan \
+    HISTORY.rst \
+    LICENSE \
+    MANIFEST.in \
+    README.md \
+    README.rst \
+    setup.py \
+    /src/
+
+COPY --chown=mayan:mayan mayan /src/mayan
+
+# Install development packages needed to build the Python packages.
+
+RUN mkdir -p "${PROJECT_INSTALL_DIR}" \
 && chown -R mayan:mayan "${PROJECT_INSTALL_DIR}" \
 && chown -R mayan:mayan /src
 

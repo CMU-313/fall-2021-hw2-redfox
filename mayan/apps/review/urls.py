@@ -1,7 +1,9 @@
-from django.urls import path
+from django.conf.urls import url
 
-from . import views
+from .views import (
+    ReviewEditView
+)
 
 urlpatterns = [
-    path('', views.index, name='review')
+    url(regex='/', view=ReviewEditView.as_view(), name='review')
 ]
