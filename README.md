@@ -1,33 +1,10 @@
-[![pypi][pypi]][pypi-url]
-![python][python]
-![license][license]
-[![Docker pulls](https://img.shields.io/docker/pulls/mayanedms/mayanedms.svg?maxAge=3600)](https://hub.docker.com/r/mayanedms/mayanedms/)
-[![Docker Stars](https://img.shields.io/docker/stars/mayanedms/mayanedms.svg?maxAge=3600)](https://hub.docker.com/r/mayanedms/mayanedms/)
-[![Commits][commits]][commits-url]
-[![Support][support]][support-url]
-[![Store](https://img.shields.io/badge/Online_store-black)](https://teespring.com/stores/mayan-edms)
-[![Donation](https://img.shields.io/badge/donation-PayPal-brightgreen)](https://paypal.me/MayanEDMS)
 
 
-[pypi]: https://img.shields.io/pypi/v/mayan-edms.svg
-[pypi-url]: https://pypi.org/project/mayan-edms/
 
-[builds]: https://gitlab.com/mayan-edms/mayan-edms/badges/master/build.svg
-[builds-url]: https://gitlab.com/mayan-edms/mayan-edms/pipelines
-
-[python]: https://img.shields.io/pypi/pyversions/mayan-edms.svg
-[python-url]: https://img.shields.io/pypi/l/mayan-edms.svg?style=flat
-
-[license]: https://img.shields.io/pypi/l/mayan-edms.svg?style=flat
-[license-url]: https://gitlab.com/mayan-edms/mayan-edms/blob/master/LICENSE
-
-[commits]:  https://img.shields.io/github/commit-activity/y/mayan-edms/mayan-edms.svg
-[commits-url]: https://gitlab.com/mayan-edms/mayan-edms/
-
-[support]: https://img.shields.io/badge/Get_support-brightgreen
-[support-url]: https://www.mayan-edms.com/support/
-
-<div align="center">
+<div align="center"> 
+  <a href="https://docs.google.com/document/d/1o8noNlvJrrigZ47d04JAOZ3nmgQ3kt6baHvEk7cIQp0/edit?usp=sharing"> CMU-313: Link to Team Documentation & Testing </a>
+  <br>
+  <br> 
   <a href="http://www.mayan-edms.com">
     <img width="200" heigth="200" src="https://gitlab.com/mayan-edms/mayan-edms/raw/master/docs/_static/mayan_logo.png">
   </a>
@@ -41,9 +18,6 @@
     are its workflow system, role based access control, and REST API.
   <p>
 
-<p align="center">
-    <img width="400" src="https://gitlab.com/mayan-edms/mayan-edms/raw/master/docs/_static/overview.gif">
-</p>
 
 </div>
 
