@@ -5,11 +5,8 @@ from django.template import RequestContext
 from django.urls import reverse, reverse_lazy
 from django.utils.translation import ungettext, ugettext_lazy as _
 
-from mayan.apps.views.generics import (
-    AddRemoveView, MultipleObjectConfirmActionView,
-    SingleObjectCreateView, SingleObjectDeleteView, SingleObjectDetailView,
-    SingleObjectEditView, SingleObjectListView
-)
+from mayan.apps.views.generics import SingleObjectCreateView
+
 from mayan.apps.views.mixins import ExternalObjectViewMixin
 
 from .forms import RevForm
