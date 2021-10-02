@@ -2,7 +2,7 @@
 
 
 <div align="center"> 
-  <a href="https://docs.google.com/document/d/1o8noNlvJrrigZ47d04JAOZ3nmgQ3kt6baHvEk7cIQp0/edit?usp=sharing"> CMU-313: Link to Team Documentation & Testing </a>
+  <a href="Testing%20Document%20HW%202B.pdf"> CMU-313: Link to Team Documentation & Testing </a>
   <br>
   <br> 
   <a href="http://www.mayan-edms.com">
